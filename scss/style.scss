@@ -8,7 +8,12 @@ html, body {
 	font-family: $font-primary;
 	font-size: 14px;
 	color: $black;
+
+	&._lock {
+		overflow: hidden;
+	}
 }
+
 
 .wrapper {
 	width: 100%;
@@ -100,6 +105,7 @@ html, body {
 			flex-direction: column;
 			justify-content: center;
 			position: relative;
+			z-index: 99;
 
 			@media (max-width: 567px) {
 				align-items: flex-end;
@@ -246,6 +252,7 @@ html, body {
 	&__box {
 		position: relative;
 		margin-bottom: 60px;
+		z-index: 0;
 	}
 
 	&__swiper {

@@ -77,6 +77,10 @@ html, body {
   color: #000;
 }
 
+html._lock, body._lock {
+  overflow: hidden;
+}
+
 .wrapper {
   width: 100%;
   overflow: hidden;
@@ -162,6 +166,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    z-index: 99;
   }
 }
 
@@ -309,6 +314,7 @@ html, body {
 .servs__box {
   position: relative;
   margin-bottom: 60px;
+  z-index: 0;
 }
 
 .servs__navigation {
