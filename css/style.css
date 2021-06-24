@@ -77,8 +77,10 @@ html, body {
   color: #000;
 }
 
-html._lock, body._lock {
-  overflow: hidden;
+@media (max-width: 768px) {
+  html._lock, body._lock {
+    overflow: hidden;
+  }
 }
 
 .wrapper {
@@ -911,11 +913,13 @@ html._lock, body._lock {
   }
   .contacts__box .contacts__body-column {
     align-items: center;
-    text-align: center;
     padding-right: 0;
   }
   .contacts__box .contacts__body-column:not(:last-child) {
     margin-bottom: 35px;
+  }
+  .contacts__box .contacts__place {
+    text-align: center;
   }
 }
 
@@ -1278,6 +1282,10 @@ html._lock, body._lock {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 15px;
+}
+
+.title_small {
+  font-size: 24px;
 }
 
 .title_w {

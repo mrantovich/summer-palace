@@ -9,9 +9,12 @@ html, body {
 	font-size: 14px;
 	color: $black;
 
-	&._lock {
-		overflow: hidden;
+	@media (max-width: 768px) {
+		&._lock {
+			overflow: hidden;
+		}
 	}
+	
 }
 
 
@@ -855,11 +858,13 @@ html, body {
 			}
 			.contacts__body-column {
 				align-items: center;
-				text-align: center;
 				padding-right: 0;
 				&:not(:last-child) {
 					margin-bottom: 35px;
 				}
+			}
+			.contacts__place {
+				text-align: center;
 			}
 		}
 	}
@@ -1238,6 +1243,9 @@ html, body {
 	text-transform: uppercase;
 	margin-bottom: 15px;
 	
+	&_small {
+		font-size: 24px;
+	}
 
 	&_w {
 		color: $white;
